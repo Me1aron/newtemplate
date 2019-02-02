@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Остоженка</title>
+		<meta name="theme-color" content="#E5E5E5">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href=" styles/main.min.css">
+	</head>
+	<body>
+		<header class="header" v-if='visible'>
+			<div class="container">
+				<nav class="header__menu d-flex justify-content-between flex-row">
+				<a href="#" class="menu__logo p-2">
+					<img src=" img/nav_logo.svg" class=''alt="">
+					<img src=" img/company_name.svg" alt="" class="menu__company_name">
+				</a>
+				<a href="#" class='menu__icon p-2'>
+					<img src=" img/menu_icon.svg" alt="">
+				</a>
+				</nav>
+				<div class="header__logo d-flex justify-content-center">
+						<img src=" img/header_logo.png" alt="">
+				</div>
+				<p class="logo__info">
+					выгодно • престижно • стильно
+				</p>
+			</div>
+			<div class="header__title">
+				<h1>Жилой комплекс «Остоженка 11»</h1> 
+				<p class="title__info d-flex justify-content-center">
+						Элитный жилой комплекс класса премиум, месторасположением которого
+						<br> является район «Золотой Мили».Это один из наиболее самых 
+						<br> респектабельных районов столицы.
+				</p>
+			</div>
+		</header>
+		<div class="adventages" v-if='visible'>
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-10">
+						<ul class="d-flex justify-content-around flex-row">
+							<li class="adventages__item">
+								<img src=" img/apartments_icon.svg" alt="" class="adventages__img d-flex justify-content-center">
+								<p class="adventages__title">
+										Готовый дом
+										<br> на «Золотой Миле»
+								</p>
+							</li>
+							<li class="adventages__item">
+								<img src=" img/window_icon.svg" alt="" class="adventages__img d-flex justify-content-center">
+								<p class="adventages__title">
+										Панорамные окна 
+										<br> с видом на центр города
+								</p>
+							</li>
+							<li class="adventages__item">
+								<img src=" img/balcony_icon.svg" alt="" class="adventages__img d-flex justify-content-center">
+								<p class="adventages__title">
+										Роскошные пентхаусы
+									<br>с террасами
+								</p>
+							</li>
+							<li class="adventages__item">
+								<img src=" img/planning_icon.svg" alt="" class="adventages__img d-flex justify-content-center">
+								<p class="adventages__title">
+										Дизайнерские входные 
+										<br> группы
+								</p>
+							</li>
+							<li class="adventages__item d-flex align-items-end flex-column">
+								<img src=" img/advantages_icon.svg" alt="" class="adventages__img d-flex justify-content-center p-2">
+								<p class="adventages__title mt-auto p-2">
+										Клубный формат – всего 
+										<br> 38 апартаментов
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="about" v-if='visible'>
+			<div class="container">
+				<div class="about__title d-flex">
+					<div class="title__number">
+						01
+					</div>
+					<div class="title__text">
+							О жилом комплексе
+					</div> 
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="about__content col-8">
+						<h2 class="content__title">
+								Надежность
+								<br> и комфорт
+						</h2>
+						<div class="row d-flex justify-content-between">
+							<p class="content__information col-6">
+									Клубный дом «Остоженка, 11» расположен на «Золотой Миле», в самом респектабельном районе столицы. В комплексе всего 38 квартир – по одной на этаже с индивидуальным лифтом, что обеспечивает комфортное и приватное проживание.
+
+									<br> <br> Архитектурный проект выполнен известным бюро «Сергей Киселев и партнеры», которому удалось создать изысканное и элегантное здание, ставшее настоящим украшением Остоженки. В отделке фасадов дома были использованы редкие сорта юрского известняка из Германии. Со стороны двора фасад отделан натуральным камнем и ценными видами древесины.
+									
+							</p>
+							<div class="content__information col-6">
+								<p class="content__information-white">
+										На расстоянии небольшой прогулки: детские сады и школы, магазины, пункты сервиса и бытового обслуживания, спа-салоны и фитнес-клубы, рестораны и бары, театры и галереи.
+								</p>
+								<p>
+										Роскошные дизайнерские холлы выполнены с применением дорогостоящих отделочных материалов и мебели от ведущих мировых брендов. Уютный двор с фонтанами, детской площадкой и прогулочными зонами закрыт от посторонних и позволяет отдохнуть от шума мегаполиса. Двухуровневый подземный паркинг рассчитан на 94 машиноместа, что обеспечивает жителей как минимум двумя парковочными местами на одну квартиру.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="architecture" v-if='visible'>
+			<div class="container">
+				<div class="architecture__title d-flex justify-content-start">
+					<div class="title__number">
+						02
+					</div>
+					<div class="title__text">
+						Архитектура
+					</div> 
+				</div>
+				<hr>
+				<div class="row bg">
+					<div class="architecture__content col-7">
+						<h2 class="content__title">
+								Архитектура
+								<br> комплекса
+						</h2>
+						<p class="content__information">
+								Проект разработан архитектурной мастерской «Сергей Киселёв и партнёры». Фасад поделён на три составляющих, выполненных с индивидуальным оформлением и гармонично сочетающихся с соседними. Для декора той стороны, что «смотрит» на 1-й Зачатьевский переулок, применялся голубой известняк. Другая выходит на перекрёсток; тема её — сочетание масштабных светло-бежевых плит. Часть, ориентированная на Пожарский переулок, отделана серо-рыжим камнем.
+
+								<br> <br> В отношении стиля — европейский, декорированный добытыми в Германии каменными породами и ценными видами древесины (бразильский ясень). Свойства её — пожароустойчивость и долговечность.
+						</p>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<div class="gallery" v-if='visible'>
+			<div class="container">
+				<div class="gallery__title d-flex">
+					<div class="title__number">
+						03
+					</div>
+					<div class="title__text">
+							Галерея
+					</div> 
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="gallery__content col-10">
+						<div class="row d-flex justify-content-center flex-row">
+							<h2 class="content__title col-4">
+									Оцените свой
+									<br> будущий дом
+							</h2>
+							<p class="content__text col-6">
+									В отношении стиля — европейский, декорированный добытыми в Германии каменными породами и ценными видами древесины (бразильский ясень). Свойства её — пожароустойчивость и долговечность.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="gallery__slide">
+					<div class="d-flex justify-content-between flex-row">
+						<a href="#" class="slide__btn">
+							<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.0496 17.8658C9.16743 17.9836 9.31472 18.0425 9.47674 18.0425C9.63875 18.0425 9.78604 17.9836 9.90387 17.8658C10.1395 17.6301 10.1395 17.2472 9.90387 17.0115L2.39224 9.49991L9.90387 1.98828C10.1395 1.75262 10.1395 1.36968 9.90387 1.13402C9.66821 0.898361 9.28526 0.898361 9.0496 1.13402L1.09612 9.07278C0.860458 9.30844 0.860458 9.69138 1.09612 9.92704L9.0496 17.8658Z" fill="white"/>
+							</svg>										
+						</a>
+						<a href="#" class="slide__btn">
+							<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.95039 1.1342C1.83256 1.01637 1.68528 0.957455 1.52326 0.957455C1.36125 0.957455 1.21396 1.01637 1.09613 1.1342C0.860471 1.36986 0.860471 1.7528 1.09613 1.98846L8.60776 9.50009L1.09613 17.0117C0.860473 17.2474 0.860473 17.6303 1.09613 17.866C1.33179 18.1016 1.71474 18.1016 1.9504 17.866L9.90388 9.92722C10.1395 9.69156 10.1395 9.30862 9.90388 9.07296L1.95039 1.1342Z" fill="white"/>
+							</svg>											
+						</a>
+					</div>
+					<img src=" img/slide4.png" class='slide__img' alt="">
+					<p class="slide__date">
+							01     02     03     04     05     06     07
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="offer" v-if='visible'>
+			<div class="container">
+				<div class="offer__title d-flex">
+					<div class="title__number">
+						04
+					</div>
+					<div class="title__text">
+							Предложения
+					</div> 
+				</div>
+				<div class="row d-flex justify-content-center">
+				<div class="offer__content col-10">
+					<div class="row d-flex justify-content-center flex-row">
+						<h2 class="content__title col-4">
+								Квартиры
+							<br>на продажу
+						</h2>
+						<p class="content__text col-6">
+								На нашем сайте представлены квартиры на продажу в жилом комплексе ЖК «Остоженка, 11» по самой привлекательной стоимости. Вы можете выбрать и забронировать подходящий вариант жилья в разделе с планировками и ценами.
+						</p>
+					</div>
+				</div>
+				<div class="offer__block d-flex justify-content-center">
+					<div class="block__title col-3">
+							Этаж	:  2
+							<br> Комнат :  3
+							<br> Площадь :  142 м2
+					</div>
+					<div class="block__cash col-5">
+							151 124 444 Р
+							<p>15 000 $  за м2</p>
+					</div>
+				</div>
+				<div class="offer__block-img d-flex justify-content-between">
+					<div class="btn d-flex">
+						<a href="" class='slide__link'>
+								<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.0496 17.8658C9.16743 17.9836 9.31472 18.0425 9.47674 18.0425C9.63875 18.0425 9.78604 17.9836 9.90387 17.8658C10.1395 17.6301 10.1395 17.2472 9.90387 17.0115L2.39224 9.49991L9.90387 1.98828C10.1395 1.75262 10.1395 1.36968 9.90387 1.13402C9.66821 0.898361 9.28526 0.898361 9.0496 1.13402L1.09612 9.07278C0.860458 9.30844 0.860458 9.69138 1.09612 9.92704L9.0496 17.8658Z" fill="white"/>
+								</svg>	
+						</a>
+						<a href="" class='slide__link'>
+								<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.95039 1.1342C1.83256 1.01637 1.68528 0.957455 1.52326 0.957455C1.36125 0.957455 1.21396 1.01637 1.09613 1.1342C0.860471 1.36986 0.860471 1.7528 1.09613 1.98846L8.60776 9.50009L1.09613 17.0117C0.860473 17.2474 0.860473 17.6303 1.09613 17.866C1.33179 18.1016 1.71474 18.1016 1.9504 17.866L9.90388 9.92722C10.1395 9.69156 10.1395 9.30862 9.90388 9.07296L1.95039 1.1342Z" fill="white"/>
+								</svg>		
+						</a>
+					</div>
+					<img src=" img/13224.jpg" alt="" class="block__img">
+					<p>Квартира идеально подходит для семьи или пары. Для комфортного проживания в Вашем распоряжении удобная и просторная гостинная,кухня оборудованная по последнему слову техники, которая обеспечивает Вас всем необходимым для приготовления изящных блюд.
+						<br><br><br><br><br><br><br><br><br><br>
+						<a href="" class='link'>
+							<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+							</svg>								
+							связаться с менеджером
+						</a>
+					</p>
+				</div>
+				<div class="offer__block d-flex justify-content-center">
+					<div class="block__title col-3">
+							Этаж	:  4
+						<br>Комнат :  4
+						<br>Площадь :  175 м2
+
+					</div>
+					<div class="block__cash col-5">
+							251 100 000 Р
+							<p>15 000 $  за м2</p>
+					</div>
+				</div>
+				<div class="offer__block-img d-flex justify-content-between">
+					<div class="btn d-flex">
+						<a href="" class='slide__link'>
+								<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.0496 17.8658C9.16743 17.9836 9.31472 18.0425 9.47674 18.0425C9.63875 18.0425 9.78604 17.9836 9.90387 17.8658C10.1395 17.6301 10.1395 17.2472 9.90387 17.0115L2.39224 9.49991L9.90387 1.98828C10.1395 1.75262 10.1395 1.36968 9.90387 1.13402C9.66821 0.898361 9.28526 0.898361 9.0496 1.13402L1.09612 9.07278C0.860458 9.30844 0.860458 9.69138 1.09612 9.92704L9.0496 17.8658Z" fill="white"/>
+								</svg>	
+						</a>
+						<a href="" class='slide__link'>
+								<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.95039 1.1342C1.83256 1.01637 1.68528 0.957455 1.52326 0.957455C1.36125 0.957455 1.21396 1.01637 1.09613 1.1342C0.860471 1.36986 0.860471 1.7528 1.09613 1.98846L8.60776 9.50009L1.09613 17.0117C0.860473 17.2474 0.860473 17.6303 1.09613 17.866C1.33179 18.1016 1.71474 18.1016 1.9504 17.866L9.90388 9.92722C10.1395 9.69156 10.1395 9.30862 9.90388 9.07296L1.95039 1.1342Z" fill="white"/>
+								</svg>		
+						</a>
+					</div>
+					<img src=" img/9135.jpg" alt="" class="block__img">
+					<p>Квартира идеально подходит для семьи или пары. Для комфортного проживания в Вашем распоряжении удобная и просторная гостинная,кухня оборудованная по последнему слову техники, которая обеспечивает Вас всем необходимым для приготовления изящных блюд.
+						<br><br><br><br><br><br><br><br><br><br>
+						<a href="" class='link'>
+							<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+							</svg>								
+							связаться с менеджером
+						</a>
+					</p>
+				</div>
+				<div class="offer__block d-flex justify-content-center">
+					<div class="block__title col-3">
+							Этаж	:  2
+							<br> Комнат :  3
+							<br> Площадь :  142 м2
+					</div>
+					<div class="block__cash col-5">
+							151 124 444 Р
+							<p>15 000 $  за м2</p>
+					</div>
+				</div>
+				<div class="offer__block-img d-flex justify-content-between">
+					<div class="btn d-flex">
+						<a href="" class='slide__link'>
+								<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.0496 17.8658C9.16743 17.9836 9.31472 18.0425 9.47674 18.0425C9.63875 18.0425 9.78604 17.9836 9.90387 17.8658C10.1395 17.6301 10.1395 17.2472 9.90387 17.0115L2.39224 9.49991L9.90387 1.98828C10.1395 1.75262 10.1395 1.36968 9.90387 1.13402C9.66821 0.898361 9.28526 0.898361 9.0496 1.13402L1.09612 9.07278C0.860458 9.30844 0.860458 9.69138 1.09612 9.92704L9.0496 17.8658Z" fill="white"/>
+								</svg>	
+						</a>
+						<a href="" class='slide__link'>
+								<svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.95039 1.1342C1.83256 1.01637 1.68528 0.957455 1.52326 0.957455C1.36125 0.957455 1.21396 1.01637 1.09613 1.1342C0.860471 1.36986 0.860471 1.7528 1.09613 1.98846L8.60776 9.50009L1.09613 17.0117C0.860473 17.2474 0.860473 17.6303 1.09613 17.866C1.33179 18.1016 1.71474 18.1016 1.9504 17.866L9.90388 9.92722C10.1395 9.69156 10.1395 9.30862 9.90388 9.07296L1.95039 1.1342Z" fill="white"/>
+								</svg>		
+						</a>
+					</div>
+					<img src=" img/13224.jpg" alt="" class="block__img">
+					<p>Квартира идеально подходит для семьи или пары. Для комфортного проживания в Вашем распоряжении удобная и просторная гостинная,кухня оборудованная по последнему слову техники, которая обеспечивает Вас всем необходимым для приготовления изящных блюд.
+						<br><br><br><br><br><br><br><br><br><br>
+						<a href="" class='link'>
+							<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+							</svg>								
+							связаться с менеджером
+						</a>
+					</p>
+				</div>
+				<div class="offer__letter">
+					<a href="">
+						<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+						</svg>
+						смотреть больше</a>
+				</div>
+			</div>
+		</div>
+		<div class="presentation" v-if='visible'>
+			<div class="container">
+				<div class="presentation__title d-flex">
+					<div class="title__number">
+						05
+					</div>
+					<div class="title__text">
+							Презентация
+					</div> 
+				</div>
+				<div class="presentation__content">
+					<div class="row d-flex justify-content-center">
+						<div class="content__video col-3 d-flex align-items-start flex-column">
+							<a href="" class='video__view'> <p>Смотреть</p></a>
+							<a href="" class='video__ellipse-one'>
+								<div class="video__ellipse-two d-flex justify-content-center">
+									<img src=" img/Vector__btn.svg" alt="">
+								</div>
+							</a>
+							<a href="" class='video__view-right'> <p>Видео</p></a>
+						</div>
+						<div class="content__title col-4">
+								Презенатация
+							<br>	жилого комплекса
+							<br>	«Остоженка, 11»
+						</div>
+						<div class="content__text col-5">
+								<p>Квартира идеально подходит для семьи или пары. Для комфортного проживания в Вашем распоряжении удобная и просторная гостинная,кухня оборудованная по последнему слову техники, которая обеспечивает Вас всем необходимым для приготовления изящных блюд.
+									<br><br><br> <a href="" class='link'>
+										<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+										</svg>								
+										скачать презентацию
+									</a>
+								</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="request" v-if='visible'>
+			<div class="container">
+				<div class="presentation__title d-flex">
+					<div class="title__number">
+						06
+					</div>
+					<div class="title__text">
+							Оставить заявку
+					</div> 
+				</div>
+			<div class="row d-flex justify-content-center">
+				<div class="request__content col-9">
+					<div class="row d-flex justify-content-end flex-row">
+						<h2 class="content__title col-5">
+								Хотите получить
+								<br> консультацию?
+								<p>
+										Оставьте заявку или позвоните нам! Наш менеджер свяжится с вами в течении дня.
+								</p>
+						</h2>
+						<form class="content__input col-5">
+								<input type="text" class="input__name" placeholder="Ваше имя">
+								<input type="text" class="input__phone" placeholder="Номер телефона">
+								<input type="text" class="input__email" placeholder="Email">
+									<br><br> 
+								<a href="" class='link'>
+									<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+									</svg>								
+									Отправить
+								</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mortgage" v-if='visible'>
+			<div class="container">
+				<div class="mortgage__title d-flex">
+					<div class="title__number">
+						07
+					</div>
+					<div class="title__text">
+							Ипотека
+					</div> 
+				</div>
+				<div class="mortgage__content">
+					<div class="row">
+						<div class="content__available col-3">
+							<h2 class="available__title">
+									Доступная
+									<br> ипотека
+							</h2>
+							<p class="available__text">
+									Подайте заявку в один из трех  <br> банков-партнеров.
+							</p>
+							<a href="" class='link'>
+								<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+								</svg>								
+								одобрить ипотеку
+							</a>
+						</div>
+						<div class="content__bank col-3">
+							<div class="bank__rate">
+								<h3>9,2%</h3>
+								<p>
+									Ставка
+								</p>
+							</div>
+							<div class="bank__contribution">
+								<h3 class='d-flex'> <p class='align-self-end'>от </p> 15%</h3> 
+								<p>Первоначальный взнос</p>
+							</div>
+							<div class="bank__term">
+								<h3 class='d-flex'>30 <p> лет</p></h3> 
+								<p>Срок кредиторования</p>
+							</div>
+							<div class="bank__logo">
+								<img src=" img/Sber_icon.svg" alt="">
+								Сбербанк
+							</div>
+						</div>
+						<div class="content__bank col-3">
+							<div class="bank__rate">
+								<h3>9,2%</h3>
+								<p>
+									Ставка
+								</p>
+							</div>
+							<div class="bank__contribution">
+								<h3 class='d-flex'> <p class='align-self-end'>от </p> 15%</h3> 
+								<p>Первоначальный взнос</p>
+							</div>
+							<div class="bank__term">
+								<h3 class='d-flex'>30 <p> лет</p></h3> 
+								<p>Срок кредиторования</p>
+							</div>
+							<div class="bank__logo d-flex">
+								<img src=" img/vtb_icon.svg" alt="">
+							ВТБ24
+							</div>
+						</div>
+						<div class="content__bank col-3">
+							<div class="bank__rate">
+								<h3>9,2%</h3>
+								<p>
+									Ставка
+								</p>
+							</div>
+							<div class="bank__contribution">
+								<h3 class='d-flex'> <p class='align-self-end'>от </p> 15%</h3> 
+								<p>Первоначальный взнос</p>
+							</div>
+							<div class="bank__term">
+								<h3 class='d-flex'>30 <p> лет</p></h3> 
+								<p>Срок кредиторования</p>
+							</div>
+							<div class="bank__logo">
+								<img src=" img/gazprombank_icon.svg" alt="">
+							Газпромбанк
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact" v-if='visible'>
+			<div class="container">
+				<div class="contact__title d-flex">
+					<div class="title__number">
+						08
+					</div>
+					<div class="title__text">
+							Контакты
+					</div> 
+				</div>
+				<div class="row d-flex justify-content-center">
+					<div class="contact__content col-8">
+						<div class="row d-flex justify-content-center">
+							<div class="col-12">
+								<div class="d-flex flex-row">
+									<div class="content__title">
+											Оставьте заявку <br> на покупку
+									</div>
+									<div class="content__text align-self-end">
+										Оставьте заявку или позвоните нам! <br> Наш менеджер свяжится с вами в <br> течении дня.
+									</div>
+								</div>
+								<div class="content__input row">
+										<input type="text" class="input__name align-self-center col-3" placeholder="Ваше имя">
+										<input type="text" class="input__phone align-self-center col-3" placeholder="Номер телефона">
+										<a href="" class='link col-4'>
+											<svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.53674e-07 -3.0598e-07L7 2.875L6.91406e-07 6L9.53674e-07 -3.0598e-07Z" fill="#FFDFA8"/>
+											</svg>								
+											Отправить заявку
+										</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src=" img/snazzy-image.png" alt="" class="contact__map">
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src=" js/main.min.js"></script>
+	</body>
+</html>
